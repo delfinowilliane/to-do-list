@@ -1,0 +1,31 @@
+# Diretórios de build
+target/
+
+# Diretórios de dependências (Maven, Gradle)
+.m2/
+
+# Configurações de IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários de sistema operacional
+*.swp
+*.bak
+Thumbs.db
+.DS_Store
+
+# Chaves e certificados
+*.pem
+*.key
+*.crt
+*.p12
+
+# Arquivos de configuração específicos de ambiente
+.env
