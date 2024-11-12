@@ -29,3 +29,7 @@ Thumbs.db
 
 # Arquivos de configuração específicos de ambiente
 .env
+
+# Ignorar application.properties
+src/main/resources/application.properties
+
