@@ -31,5 +31,5 @@ Thumbs.db
 .env
 
 # Ignorar application.properties
-src/main/resources/application.properties
+to-do-list/src/main/resources/application.properties
 
