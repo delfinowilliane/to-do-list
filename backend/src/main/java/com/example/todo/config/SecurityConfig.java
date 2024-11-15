@@ -1,4 +1,4 @@
-package com.example.todo.security;
+package com.example.todo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,14 +9,15 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .authorizeRequests()
-                .requestMatchers("/api/tasks/*").authenticated()
-                .anyRequest().permitAll()
-            .and()
-            .httpBasic();
+            .csrf(csrf -> csrf.disable())
+            .authorizeRequests(auth -> auth
+                .requestMatchers("/api/tasks/**").permitAll()
+                .anyRequest().authenticated()
+            );
         return http.build();
     }
 }
