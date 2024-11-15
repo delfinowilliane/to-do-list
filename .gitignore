@@ -1,34 +1,17 @@
-# Diretórios de build
-target/
+# Backend
+/backend/target/
+/backend/.idea/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
 
-# Diretórios de dependências (Maven, Gradle)
-.m2/
+# Frontend
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
 
-# Configurações de IDE
-.idea/
-*.iml
-.project
-.classpath
-.settings/
-.vscode/
-
-# Arquivos de log
-*.log
-
-# Arquivos temporários de sistema operacional
-*.swp
-*.bak
-Thumbs.db
+# Geral
 .DS_Store
-
-# Chaves e certificados
-*.pem
-*.key
-*.crt
-*.p12
-
-# Arquivos de configuração específicos de ambiente
-.env
-
-# Ignorar application.properties
-src/main/resources/application.properties
