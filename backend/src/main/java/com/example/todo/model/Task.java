@@ -1,10 +1,7 @@
 package com.example.todo.model;
 
-import java.time.LocalDateTime;
-
-import org.springframework.data.annotation.*;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Getter;
@@ -21,7 +18,6 @@ public class Task {
 
     private String title;
     private String description;
-    private LocalDateTime createdAt = LocalDateTime.now();
     private boolean completed = false;
 
 }
