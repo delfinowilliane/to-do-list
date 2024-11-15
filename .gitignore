@@ -4,6 +4,7 @@
 /backend/.classpath
 /backend/.project
 /backend/.settings/
+/backend/src/resources/application.properties
 
 # Frontend
 /frontend/node_modules/
